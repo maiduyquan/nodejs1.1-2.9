@@ -1,0 +1,41 @@
+<h2>Sign up for our restautant to receive news and specials!</h2>
+
+<form class="form-horizontal" role="form"
+    action="/regsister-signup/process?form=regsister" method="POST">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+    <div class="form-group">
+        <label for="fieldName" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="name" id="fieldName">   
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="fieldbirth" class="col-sm-2 control-label">birthday</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="birth" id="fieldbirth">   
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="fieldgender" class="col-sm-2 control-label">gender</label>
+        <div class="col-sm-4">
+            <input type="" class="form-control" name="gender" id="fieldgender">   
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="fieldclass" class="col-sm-2 control-label">class</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="class" id="fieldclass">   
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="fieldreg" class="col-sm-2 control-label">regsistration code</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="reg" id="fieldreg">   
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 col-sm-offset-2">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </div>
+</form>
